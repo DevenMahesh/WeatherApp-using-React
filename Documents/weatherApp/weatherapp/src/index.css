@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+  background-color: #121212; /* Dark background color */
+  color: #ffffff; /* White text color */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* App Container Styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('./assets/craig-whitehead-SuJp8ZpkubI-unsplash.jpg'); /* Updated background image path */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Search Input Styles */
+.search {
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white input field background */
+  color: #ffffff;
+  width: 100%;
+  max-width: 300px;
+}
+
+input[type='text']::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Light gray placeholder text color */
+}
+
+/* Container Styles */
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+}
+
+/* Top Section Styles */
+.top {
+  margin-bottom: 20px;
+}
+
+.location {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.temp {
+  font-size: 48px;
+  color: #ffc107; /* Highlighted yellow for temperature */
+}
+
+.description {
+  font-size: 24px;
+  color: #a8a8a8; /* Light gray for description */
+}
+
+/* Bottom Section Styles */
+.bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feels,
+humidity,
+.wind {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #ffc107; /* Highlighted yellow for the toggle button */
+  transition: transform 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
